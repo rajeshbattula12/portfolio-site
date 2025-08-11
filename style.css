@@ -2,130 +2,118 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0a1733; /* Navy Blue */
-  color: #f0f2f5;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.top-nav {
+  background: #1e1e2f;
+  padding: 10px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-container a:hover {
+  color: #ff9800;
 }
 
 header {
-  background-image: url('bg.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  background: url('bg.jpg') no-repeat center 20% / cover;
   color: white;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-header .container {
+  text-align: center;
+  padding: 50px 20px;
   position: relative;
-  z-index: 2;
-  max-width: 800px;
-  padding: 20px;
+  min-height: 100vh;
 }
+
+
 
 header h1 {
-  font-size: 3em;
   margin: 0;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  font-size: 2.5em;
 }
 
 header p {
-  font-size: 1.5em;
-  margin-top: 10px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  margin: 10px 0;
 }
 
 .social a {
-  margin: 0 10px;
-  color: #00d8ff;
+  display: inline-block;
+  margin: 10px 10px 0 0;
   text-decoration: none;
-  font-weight: bold;
+  color: white;
+  background: #3f51b5;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.social a:hover {
+  background: #303f9f;
 }
 
 .resume-btn {
   display: inline-block;
-  margin-top: 20px;
-  background-color: #00bcd4;
+  margin-top: 15px;
+  text-decoration: none;
+  background: #ff9800;
   color: white;
   padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 .resume-btn:hover {
-  background-color: #0097a7;
+  background: #e68900;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 20px;
 }
 
 h2 {
-  border-bottom: 2px solid #00bcd4;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  color: #00d8ff;
+  color: #1e1e2f;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  gap: 10px;
   padding: 0;
+  list-style: none;
 }
 
 .skills li {
-  background: #00bcd4;
-  color: white;
+  background: #e0e0e0;
   padding: 8px 12px;
-  margin: 5px;
   border-radius: 4px;
 }
 
 .project {
-  background: #122544;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-left: 4px solid #00bcd4;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  background: #ffffff;
+  padding: 15px;
+  border-left: 4px solid #3f51b5;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 footer {
-  background: #081021;
-  color: #ccc;
   text-align: center;
-  padding: 20px;
-}
-
-#education,
-#certifications {
-  background-color: #10233e;
-  padding: 30px 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-} 
-.phone {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 1.1em;
-  color: #00d8ff;
+  padding: 15px 0;
+  background: #1e1e2f;
+  color: white;
+  margin-top: 40px;
 }
